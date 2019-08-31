@@ -43,6 +43,5 @@ def main():
     fruits5 = fruits[::-1]
     print(fruits5)  # ['07mango', '06pear', '05pitaya', '04waxberry', '03strawberry', '02apple', '01grape']
 
-
 if __name__ == '__main__':
     main()
