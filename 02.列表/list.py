@@ -43,11 +43,5 @@ def main():
     list1.clear()
     print(list1)            # []
 
-
-
-
-
-
-
 if __name__ == '__main__':
     main()
