@@ -25,9 +25,13 @@ def get_suffix(filename, has_dot=False):
         return ''
 
 
-if __name__ == '__main__':
+def main():
     # 打印点.
     # print(get_suffix('File_Settings.png', has_dot=True))
 
     # 不打印点.
     print(get_suffix('无师自通：Photoshop CS5图像处理与典型实例从入门到精通（全彩超值版） PDF 扫描版.pdf'))
+
+
+if __name__ == '__main__':
+    main()
