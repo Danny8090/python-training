@@ -1,7 +1,7 @@
 # python-training
 我的Python练习记录
 
-1.记录python-training-tutorial和Python-100-Days中的代码练习
+1.记录[Python-100-Days](https://github.com/jackfrued/Python-100-Days)中的代码练习
 
 2.所有的Python代码上传并记录
 
