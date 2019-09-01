@@ -36,6 +36,9 @@ def generate_code(code_len=4):
     return code
 
 
-if __name__ == '__main__':
+def main():
     print(generate_code())
 
+
+if __name__ == '__main__':
+    main()
