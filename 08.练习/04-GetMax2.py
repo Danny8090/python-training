@@ -24,6 +24,10 @@ def max2(x):
     return m1, m2
 
 
-if __name__ == '__main__':
+def main():
     list1 = [0, 111, 2, 3, 4, 50, 6, 7, 8, 9, 10]
     print(max2(list1))
+
+
+if __name__ == '__main__':
+    main()
