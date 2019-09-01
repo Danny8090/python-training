@@ -14,15 +14,18 @@
     start_index和stop_index不论是正数还是负数索引还是混用都可以，但是要保证 list[stop_index]元素的【逻辑】位置必须在list[start_index]元素的【逻辑】位置左边，否则取不出元素
 """
 
+
 def main():
     fruits = ['01grape', '02apple', '03strawberry', '04waxberry']
     print(fruits)  # ['01grape', '02apple', '03strawberry', '04waxberry']
     fruits += ['05pitaya', '06pear', '07mango']
-    print(fruits)  # ['01grape', '02apple', '03strawberry', '04waxberry', '05pitaya', '06pear', '07mango']
+    # ['01grape', '02apple', '03strawberry', '04waxberry', '05pitaya', '06pear', '07mango']
+    print(fruits)
 
     # 循环遍历列表元素
     for fruit in fruits:
-        print(fruit.title(), end=' ')  # 01Grape 02Apple 03Strawberry 04Waxberry 05Pitaya 06Pear 07Mango
+        # 01Grape 02Apple 03Strawberry 04Waxberry 05Pitaya 06Pear 07Mango
+        print(fruit.title(), end=' ')
     print()
 
     # 列表切片
@@ -30,18 +33,22 @@ def main():
     print(fruits2)  # ['02apple', '03strawberry', '04waxberry']
 
     fruit3 = fruits  # 没有复制列表只创建了新的引用
-    print(fruit3)  # ['01grape', '02apple', '03strawberry', '04waxberry', '05pitaya', '06pear', '07mango']
+    # ['01grape', '02apple', '03strawberry', '04waxberry', '05pitaya', '06pear', '07mango']
+    print(fruit3)
 
     # 可以通过完整切片操作来复制列表
     fruits3 = fruits[:]
-    print(fruits3)  # ['01grape', '02apple', '03strawberry', '04waxberry', '05pitaya', '06pear', '07mango']
+    # ['01grape', '02apple', '03strawberry', '04waxberry', '05pitaya', '06pear', '07mango']
+    print(fruits3)
 
     fruits4 = fruits[-3:-1]
     print(fruits4)  # ['05pitaya', '06pear']
 
     # 可以通过反向切片操作来获得倒转后的列表的拷贝
     fruits5 = fruits[::-1]
-    print(fruits5)  # ['07mango', '06pear', '05pitaya', '04waxberry', '03strawberry', '02apple', '01grape']
+    # ['07mango', '06pear', '05pitaya', '04waxberry', '03strawberry', '02apple', '01grape']
+    print(fruits5)
+
 
 if __name__ == '__main__':
     main()

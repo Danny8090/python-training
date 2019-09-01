@@ -1,5 +1,6 @@
 # coding=utf-8
 
+
 def main():
     str1 = 'hello world'
 
@@ -29,12 +30,12 @@ def main():
     print(str1.endswith('ld'))      # True
 
     # center函数将字符串以指定的宽度居中并在两侧填充指定的字符
-    print(str1.center(50, '*'))     # *******************hello world*******************
+    # *******************hello world*******************
+    print(str1.center(50, '*'))
 
     # rjust函数将字符串以指定的宽度靠右放置左侧填充指定的字符
-    print(str1.rjust(50, '_'))      # _______________________________________hello world
-
-
+    # _______________________________________hello world
+    print(str1.rjust(50, '_'))
 
     str2 = 'abc12345'
 
@@ -46,13 +47,13 @@ def main():
     start_index是切片的起始位置。
     stop_index是切片的结束位置（不包括）
     step可以省略，默认值是1，步长值不能为0，不然会报错ValueError
-    
+
     当 step 是正数时，以list[start_index]元素位置开始， step做为步长到list[stop_index]元素位置（不包括）为止，从左向右截取，
     start_index和stop_index不论是正数还是负数索引还是混用都可以，但是要保证 list[stop_index]元素的【逻辑】位置必须在list[start_index]元素的【逻辑】位置右边，否则取不出元素
-    
+
     当 step 是负数时，以list[start_index]元素位置开始， step做为步长到list[stop_index]元素位置（不包括）为止，从右向左截取
     start_index和stop_index不论是正数还是负数索引还是混用都可以，但是要保证 list[stop_index]元素的【逻辑】位置必须在list[start_index]元素的【逻辑】位置左边，否则取不出元素
-    
+
     '''
     print(str2[2:5])        # c12
     print(str2[2:])         # c12345
@@ -63,8 +64,6 @@ def main():
     print(str2[:])          # abc12345 复制
     print(str2[-3:-1])      # 34
 
-
-
     # isdigit函数检查字符串是否由数字构成
     print(str2.isdigit())       # False
 
@@ -74,17 +73,12 @@ def main():
     # isalnum函数检查字符串是否以数字和字母构成
     print(str2.isalnum())       # True
 
-
-
     str3 = '  jackfrued@126.com '
 
     print(str3)     # '  jackfrued@126.com '
 
     # strip获得字符串修剪左右两侧空格的拷贝
     print(str3.strip())     # jackfrued@126.com
-
-
-
 
     # 列表操作
     alist = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]

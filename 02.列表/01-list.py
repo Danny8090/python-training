@@ -1,5 +1,6 @@
 # coding=utf-8
 
+
 def main():
     list1 = [1, 3, 5, 7, 10]
     print(list1)        # [1, 3, 5, 7, 10]
@@ -42,6 +43,7 @@ def main():
     # 清空列表元素
     list1.clear()
     print(list1)            # []
+
 
 if __name__ == '__main__':
     main()
